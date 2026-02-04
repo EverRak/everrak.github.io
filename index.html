@@ -28,78 +28,101 @@
     <!-- CONTENT -->
     <main class="container">
 
-        <!-- INTRO -->
-        <section class="intro">
+        <!-- INTRO / ABOUT -->
+        <section class="intro about">
+            <h2>About Me</h2>
             <p>
-                EverRak builds lightweight, explicit, and extensible Unity systems,
-                focused on clean architecture, predictable APIs, and full developer control.
+                Hi! I'm Rak (Pedro), a hobby developer with experience in C#, C++, HTML, CSS, Unity, and more. 
+                When I'm not studying, I'm coding (or playing games) all day!
             </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>Some of my most advanced skills include:</p>
+            <div class="grid-container skills-grid">
+                <div class="grid-item"><img src="images/HTML.png" alt="HTML Icon"><p>HTML</p></div>
+                <div class="grid-item"><img src="images/CSS.png" alt="CSS Icon"><p>CSS</p></div>
+                <div class="grid-item"><img src="images/CSharp.png" alt="C# Icon"><p>C#</p></div>
+                <div class="grid-item"><img src="images/Unity.png" alt="Unity Icon"><p>Unity</p></div>
+                <div class="grid-item"><img src="images/CPP.png" alt="C++ Icon"><p>C++</p></div>
+            </div>
+            <p>C# and Unity are my strongest skills, as they were my first programming languages and the core of my experience.</p>
         </section>
 
         <!-- ASSETS -->
         <section class="assets">
-            <h2>Current Releases</h2>
-
+            <h2>Current Releases & Projects</h2>
             <div class="asset-grid">
 
+                <!-- Asset example -->
                 <div class="asset-card">
                     <div class="asset-icon">
                         <img src="images/simpleDialogue-icon.png" alt="Simple Dialogue System Icon">
                     </div>
                     <h3>Simple Dialogue System</h3>
                     <p>
-                        A modular dialogue system designed for readability,
-                        extensibility, and clean integration into real projects.
+                        A modular dialogue system designed for readability, extensibility, and clean integration into real projects.
                     </p>
                     <span class="card-cta">Available on Unity Asset Store</span>
                 </div>
 
-                <!-- Duplicate for new assets -->
+                <!-- Project: Prime Number Calculator -->
+                <div class="asset-card">
+                    <h3>Prime Number Calculator</h3>
+                    <img src="images/Projects/PrimeIcon.png" alt="Prime Number Project Icon" class="asset-icon" style="position: relative; top: auto; right: auto;">
+                    <p>
+                        My first public GitHub project. Try to reach big prime numbers using a user-defined formula. Started in 9th grade with a friend.
+                    </p>
+                    <span class="card-cta"><a href="https://github.com/predo2810/Prime_Project" target="_blank" style="color: inherit; text-decoration: none;">View on GitHub →</a></span>
+                </div>
+
+                <!-- Project: R# -->
+                <div class="asset-card">
+                    <h3>R# Programming Language</h3>
+                    <img src="images/Projects/RSharpIcon.png" alt="R# Project Icon" class="asset-icon" style="position: relative; top: auto; right: auto;">
+                    <p>
+                        An ambitious programming language based on C# with Python-like syntax. Still in development.
+                    </p>
+                    <span class="card-cta"><a href="https://rsharp-api.netlify.app" target="_blank" style="color: inherit; text-decoration: none;">Documentation →</a></span>
+                </div>
+
+                <!-- Games -->
+                <div class="asset-card">
+                    <h3>Games on Itch.io</h3>
+                    <p>
+                        I also create games available on Itch.io. Check them out!
+                    </p>
+                    <span class="card-cta"><a href="https://everrak.itch.io" target="_blank" style="color: inherit; text-decoration: none;">Visit Itch.io →</a></span>
+                </div>
 
             </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm Rak, a passionate Unity developer with experience in C#, Unity, OpenGL, and Visual Scripting. 
-                I focus on building clean, efficient, and extensible systems for games and tools.
-            </p>
-            <ul>
-                <li>4-5 years experience in Unity and C#</li>
-                <li>Strong knowledge of architecture and clean code</li>
-                <li>Experienced with Unity Visual Scripting and OpenTK/OpenGL</li>
-            </ul>
         </section>
 
         <!-- CONTACT -->
         <section class="contact">
             <h2>Contact</h2>
             <p>If you want to reach me, just drop a message below:</p>
-        
-            <!-- Formspree form -->
-            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form id="contact-form" action="https://formspree.io/f/xrelnnze" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
                 </div>
-        
+
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="your@email.com" required>
                 </div>
-        
+
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message..." rows="6" required></textarea>
                 </div>
-        
+
                 <button type="submit">Send Message</button>
             </form>
         </section>
-
-
 
     </main>
 
@@ -108,7 +131,6 @@
         EverRak — Systems & Games
     </footer>
 
-    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
