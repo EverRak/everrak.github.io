@@ -256,3 +256,70 @@ footer {
     padding: 32px;
     opacity: 0.5;
 }
+
+/* ABOUT */
+.about {
+    margin: 80px 0;
+    max-width: 800px;
+    animation: fadeUp 1s ease;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.about ul {
+    margin-top: 12px;
+    padding-left: 20px;
+    opacity: 0.9;
+}
+
+/* CONTACT */
+.contact {
+    margin: 80px 0;
+    max-width: 600px;
+    animation: fadeUp 1s ease;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.contact input, 
+.contact textarea {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.contact button {
+    margin-top: 12px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--brand-gradient);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.contact button:hover {
+    transform: scale(1.05);
+}
