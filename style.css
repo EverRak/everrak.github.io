@@ -356,4 +356,42 @@ footer {
     box-shadow: 0 6px 20px rgba(92,225,230,0.4);
 }
 
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 24px;
+    margin: 24px 0 32px;
+    justify-items: center; /* centraliza cada item */
+    align-items: center;
+}
 
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255,255,255,0.05); /* leve efeito glass */
+    padding: 12px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.skill-item p {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0;
+    color: white;
+}
+
+.skill-item:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(92,225,230,0.3);
+}
