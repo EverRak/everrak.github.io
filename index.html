@@ -20,7 +20,7 @@
     <header class="site-header">
         <h1>EverRak</h1>
         <p>
-            Independent Unity <span class="pinkish">Tools</span> &
+            Independent Unity <span class="pinkish">Tools</span> & 
             <span class="blueish">Systems</span>
         </p>
     </header>
@@ -28,6 +28,7 @@
     <!-- CONTENT -->
     <main class="container">
 
+        <!-- INTRO -->
         <section class="intro">
             <p>
                 EverRak builds lightweight, explicit, and extensible Unity systems,
@@ -35,33 +36,59 @@
             </p>
         </section>
 
+        <!-- ASSETS -->
         <section class="assets">
             <h2>Current Releases</h2>
 
             <div class="asset-grid">
 
-                <a href="https://assetstore.unity.com/packages/slug/351382"
-                target="_blank"
-                rel="noopener"
-                class="asset-card">
-
+                <div class="asset-card">
                     <div class="asset-icon">
                         <img src="images/simpleDialogue-icon.png" alt="Simple Dialogue System Icon">
                     </div>
-
                     <h3>Simple Dialogue System</h3>
                     <p>
                         A modular dialogue system designed for readability,
                         extensibility, and clean integration into real projects.
                     </p>
+                    <span class="card-cta">Available on Unity Asset Store</span>
+                </div>
 
-                    <span class="card-cta">View on Unity Asset Store →</span>
-
-                </a>
-
-                <!-- Duplicar este card para novos assets -->
+                <!-- Duplicate for new assets -->
 
             </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Rak, a passionate Unity developer with experience in C#, Unity, OpenGL, and Visual Scripting. 
+                I focus on building clean, efficient, and extensible systems for games and tools.
+            </p>
+            <ul>
+                <li>4-5 years experience in Unity and C#</li>
+                <li>Strong knowledge of architecture and clean code</li>
+                <li>Experienced with Unity Visual Scripting and OpenTK/OpenGL</li>
+            </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>If you want to reach me, just drop a message below:</p>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
 
     </main>
