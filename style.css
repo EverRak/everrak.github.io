@@ -298,14 +298,17 @@ footer {
     margin-bottom: 16px;
 }
 
+/* Labels fixas em cima */
 .form-group label {
     font-weight: 600;
     margin-bottom: 6px;
+    color: #ccc;
 }
 
 /* Inputs & Textarea */
 .contact input,
 .contact textarea {
+    width: 100%;
     padding: 12px 16px;
     border-radius: 12px;
     border: 1px solid #444c5c;
@@ -328,6 +331,12 @@ footer {
     box-shadow: 0 0 8px rgba(92,225,230,0.3);
 }
 
+/* Textarea height */
+.contact textarea {
+    min-height: 140px; /* deixa mais espaço para digitar */
+    resize: vertical; /* permite redimensionar verticalmente */
+}
+
 /* Button */
 .contact button {
     margin-top: 12px;
@@ -346,4 +355,5 @@ footer {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 6px 20px rgba(92,225,230,0.4);
 }
+
 
